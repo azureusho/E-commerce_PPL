@@ -5,6 +5,7 @@ import ItemDetails from "./scenes/itemDetails/ItemDetails";
 import Confirmation from "./scenes/checkout/Confirmation";
 import navbar from "./scenes/global/Navbar";
 import CartMenu from "./scenes/global/CartMenu";
+import Footer from "./scenes/global/Footer";
 
 
 const ScrollToTop = () => {
@@ -30,6 +31,7 @@ function App() {
           <Route path="checkout/success" element={<Confirmation />} />
         </Routes>
         <CartMenu />
+        <Footer />
       </BrowserRouter>
     </div>
   );
