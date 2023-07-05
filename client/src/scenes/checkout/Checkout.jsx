@@ -8,6 +8,9 @@ import Payment from "./Payment";
 import Shipping from "./Shipping";
 import { loadStripe } from "@stripe/stripe-js";
 
+const stripePromise = loadStripe(
+  pk_test_51NQQrwDF6fX2oCmAGD1qxrGgQyCGMPUUwpEXcZsUK4bL4thQMOlNlEDukEpAITKlPuGK4DL6bMHHyk1W999M0D7A00eqqYqqLp
+);
 
 const Checkout = () => {
   const [activeStep, setActiveStep] = useState(0);
